@@ -8,7 +8,6 @@
     password:"cisco"
 
   tasks:
-
   - name: SYS | Define provider
     set_fact:
       provider:
