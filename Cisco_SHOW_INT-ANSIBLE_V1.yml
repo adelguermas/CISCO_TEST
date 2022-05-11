@@ -1,5 +1,4 @@
 ---
-
 - name: Cisco ip interface brief + ip route
   hosts: all
   gather_facts: false
