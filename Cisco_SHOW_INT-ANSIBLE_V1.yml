@@ -1,0 +1,26 @@
+---
+
+- name: Cisco ip interface brief + ip route
+  hosts: all
+  gather_facts: false
+  connection: network_cli
+  
+  vars:
+	password: "cisco"
+  user: "admin"
+	server: "{{ ansible_host }}"
+  validate_certs: no
+  server_port: 443
+
+  tasks:
+    - name: run show ip interface brief + ip route
+      ios_command:
+        commands: 
+          - show ip interface brief
+          - show ip route
+      register: output
+
+    - name: print output
+      debug:
+        var: output.stdout_lines
+    
