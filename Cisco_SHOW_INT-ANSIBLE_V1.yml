@@ -7,10 +7,10 @@
   
   vars:
 	password: "cisco"
-  user: "admin"
+	user: "admin"
 	server: "{{ ansible_host }}"
-  validate_certs: no
-  server_port: 443
+	validate_certs: no
+	server_port: 443
 
   tasks:
     - name: run show ip interface brief + ip route
