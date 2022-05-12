@@ -6,6 +6,7 @@
  
   vars:
     cli:
+      host: "{{ ansible_host }}"
       username: "admin"
       password: "cisco"
  
