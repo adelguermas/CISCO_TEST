@@ -13,10 +13,7 @@
  
   
   tasks:
-   - name: Accespt ansible net hostname
-     ios_facts:
-        gather_subset: all
-   - name: Save your show command to register
+  - name: Save your show command to register
      ios_command:
       commands: 'show mac address-table dynamic'
      register: output
