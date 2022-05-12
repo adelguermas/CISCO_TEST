@@ -5,8 +5,11 @@
   connection: local
  
   vars:
-  user="admin"
-  password="cisco"
+  password: "cisco"
+  user: "admin"
+  server: "{{ ansible_host }}"
+  validate_certs: no
+  server_port: 443
  
   
   tasks:
