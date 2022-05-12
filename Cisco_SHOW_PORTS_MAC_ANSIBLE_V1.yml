@@ -5,15 +5,13 @@
   connection: local
  
   vars:
-  password: "cisco"
-  user: "admin"
-  server: "{{ ansible_host }}"
-  validate_certs: no
-  server_port: 443
+    cli:
+      username: "admin"
+      password: "cisco"
  
   
   tasks:
   - name: Save your show command to register
     ios_command:
      commands: 'show mac address-table dynamic'
-     register: outpu
+    provider: "{{ cli }}"
