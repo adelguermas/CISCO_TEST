@@ -9,8 +9,6 @@
       host: "{{ ansible_host }}"
       username: "admin"
       password: "cisco"
- 
-  
   tasks:
     - name: ios show commands
       ios_command:
