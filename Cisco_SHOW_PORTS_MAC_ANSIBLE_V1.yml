@@ -5,9 +5,8 @@
   connection: local
  
   vars:
-   ansible_network_os=ios
-   user=cisco
-   password=cisco
+  user=cisco
+  password=cisco
  
   
   tasks:
