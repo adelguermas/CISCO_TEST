@@ -13,6 +13,7 @@
   
   tasks:
 - name: Save your show command to register
-          ios_command:
-            commands: 'show mac address-table dynamic'
-            provider: "{{ cli }}"
+         ios_command:
+           commands: 
+              - show mac address-table dynamic'
+           provider: "{{ cli }}"
