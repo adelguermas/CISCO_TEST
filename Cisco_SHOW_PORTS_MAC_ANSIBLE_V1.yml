@@ -1,0 +1,20 @@
+---
+- name: Get port details and MAC-addresses
+  hosts: Cisco
+  gather_facts: false
+  connection: local
+ 
+  vars:
+   ansible_network_os=ios
+   user=cisco
+   password=cisco
+ 
+  
+  tasks:
+   - name: Accespt ansible net hostname
+     ios_facts:
+        gather_subset: all
+   - name: Save your show command to register
+     ios_command:
+      commands: 'show mac address-table dynamic'
+     register: output
