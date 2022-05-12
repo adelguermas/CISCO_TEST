@@ -10,8 +10,8 @@
       username: "admin"
       password: "cisco"
   tasks:
-    - name: ios show commands
-      ios_command:
-    	commands: 
-          -show mac address-table dynamic
-      provider: "{{ cli }}"
+  - name: ios show commands
+    ios_command:
+    commands: 
+      -show mac address-table dynamic
+    provider: "{{ cli }}"
