@@ -12,7 +12,7 @@
  
   
   tasks:
-- name: ios show commands 
+- name: ios show commands
   ios_command:
     commands: 
        -show mac address-table dynamic
