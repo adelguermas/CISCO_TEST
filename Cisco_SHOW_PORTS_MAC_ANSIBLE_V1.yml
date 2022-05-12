@@ -5,8 +5,8 @@
   connection: local
  
   vars:
-  user=cisco
-  password=cisco
+  user="admin"
+  password="cisco"
  
   
   tasks:
